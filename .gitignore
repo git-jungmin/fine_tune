@@ -1,0 +1,83 @@
+# =========================================
+# 🧠 Python 기본
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# =========================================
+# 🧪 Machine Learning / Fine-Tuning
+# =========================================
+# Datasets & LoRA outputs
+*.jsonl
+*.csv
+*.tsv
+*.txt
+
+# Model weights and adapters
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.h5
+*.onnx
+
+# Hugging Face cache
+.cache/
+datasets/
+hub/
+output/
+runs/
+wandb/
+logs/
+transformers_cache/
+torch_cache/
+
+# Ollama model files
+~/.ollama/
+*.ollama
+*.modelfile
+
+# =========================================
+# 💻 IDE / Editor
+# =========================================
+# VSCode
+.vscode/
+# JetBrains (PyCharm)
+.idea/
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+# Temporary / swap / backup files
+*.swp
+*.tmp
+*.bak
+*~
+
+# =========================================
+# 🚀 Build / Packaging
+# =========================================
+build/
+dist/
+*.egg-info/
+
+# =========================================
+# 🔒 Personal / Secret files
+# =========================================
+.env
