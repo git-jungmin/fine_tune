@@ -1,83 +1,66 @@
-# =========================================
-# 🧠 Python 기본
-# =========================================
+# 🧠 Python
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
 *.pyo
 *.pyd
-*.so
+*.log
+*.tmp
 
-# Virtual environment
+# 🧰 Virtual environment
 venv/
 .env/
 .venv/
-env/
-ENV/
-env.bak/
-venv.bak/
 
-# Jupyter Notebook checkpoints
+# 🧾 Jupyter / IPython
 .ipynb_checkpoints/
+*.ipynb
 
-# =========================================
-# 🧪 Machine Learning / Fine-Tuning
-# =========================================
-# Datasets & LoRA outputs
-*.jsonl
-*.csv
-*.tsv
-*.txt
-
-# Model weights and adapters
-*.safetensors
-*.pt
-*.bin
-*.ckpt
-*.h5
-*.onnx
-
-# Hugging Face cache
+# 🚀 Hugging Face / Transformers cache
+~/.cache/
+~/.huggingface/
 .cache/
-datasets/
-hub/
-output/
-runs/
-wandb/
+huggingface/
 logs/
-transformers_cache/
-torch_cache/
+wandb/
 
-# Ollama model files
-~/.ollama/
-*.ollama
-*.modelfile
+# 🧩 Dataset / Checkpoints
+*.jsonl
+checkpoint-*/
+train_results/
+output_dir/
+runs/
 
-# =========================================
-# 💻 IDE / Editor
-# =========================================
-# VSCode
+# 💾 Model weights (for large binary files)
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# 🧱 Model directories
+lora-*/
+merged-*/
+*/merged*/
+*/lora*/
+gguf/
+ggml/
+*.gguf
+
+# 🧰 IDE
 .vscode/
-# JetBrains (PyCharm)
 .idea/
-# macOS metadata
 .DS_Store
-.AppleDouble
-.LSOverride
-# Temporary / swap / backup files
 *.swp
-*.tmp
+*.swo
+
+# 🧪 Temp files
 *.bak
-*~
+*.old
+*.zip
+*.tar
+*.tar.gz
+*.tmp
 
-# =========================================
-# 🚀 Build / Packaging
-# =========================================
-build/
-dist/
-*.egg-info/
-
-# =========================================
-# 🔒 Personal / Secret files
-# =========================================
-.env
+# 🪄 Custom project paths
+/PROJECT/ABORA2/fine_tune/lora-ux-qwen2/
+/PROJECT/ABORA2/fine_tune/merged-qwen2-1.5b/
+/PROJECT/ABORA2/fine_tune/train.jsonl

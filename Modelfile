@@ -1,2 +1,0 @@
-FROM mistral:7b
-ADAPTER ./lora-ux/adapter_model.safetensors
